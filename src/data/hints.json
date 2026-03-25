@@ -1,0 +1,222 @@
+{
+  "aragorn": {
+    "description": "Grand et robuste, aux traits nobles mais uses par les voyages. Cheveux bruns et sombres, barbe courte. Ses yeux gris brillent d'une lumiere vive. Il porte des vetements de Rodeur, capes usees et bottes de marche.",
+    "initials": "A"
+  },
+  "gandalf": {
+    "description": "Vieillard de haute taille, barbe longue et blanche, sourcils broussailleux. Il porte un chapeau pointu et une longue robe. Son regard perc,ant semble voir au-dela des apparences. Il s'appuie sur un baton noueux.",
+    "initials": "G"
+  },
+  "frodon": {
+    "description": "Plus grand que la plupart des Hobbits, mince avec un visage fin. Yeux brillants et vifs. Cheveux bruns et boucles. Teint plus clair que les autres Hobbits. Porte une cotte de mithril sous ses vetements.",
+    "initials": "F"
+  },
+  "legolas": {
+    "description": "Grand et elance, avec la grace des Elfes. Cheveux blonds et lisses, traits fins et sans age. Yeux percants d'un bleu vif. Se deplace avec une legerete surnaturelle, comme s'il ne touchait pas le sol.",
+    "initials": "L"
+  },
+  "gimli": {
+    "description": "Nain trapu et puissant. Longue barbe rousse soigneusement tressee. Visage large et dur sous un casque de fer. Epaules massives et bras epais. Porte une armure de mailles et un heaume.",
+    "initials": "G"
+  },
+  "sam": {
+    "description": "Hobbit robuste et trapu au visage rond et jovial. Cheveux blonds boucles, yeux bruns et honnetes. Mains calleuses de jardinier. Joues rouges et expression resolue malgre sa timidite naturelle.",
+    "initials": "S"
+  },
+  "pippin": {
+    "description": "Le plus jeune et le plus petit des Hobbits de la Communaute. Visage rond, cheveux boucles, yeux vifs et curieux. Expression espiegle et souvent affamee. Devient plus grand apres avoir bu l'eau des Ents.",
+    "initials": "P"
+  },
+  "merry": {
+    "description": "Hobbit vif et intelligent au visage avenant. Cheveux boucles et bruns. Plus reflechi que son cousin mais tout aussi aventureux. Devient plus grand que la moyenne des Hobbits apres avoir bu l'eau des Ents.",
+    "initials": "M"
+  },
+  "boromir": {
+    "description": "Grand et fort, aux traits fiers et nobles. Cheveux sombres, visage severe et determine. Large d'epaules, il porte un cor d'argent et un grand bouclier rond. Regard souvent tourmente.",
+    "initials": "B"
+  },
+  "gollum": {
+    "description": "Creature maigre et pale a la peau visqueuse. Grands yeux ronds et lumineux dans l'obscurite. Quelques meches de cheveux sur un crane presque chauve. Mains longues et agiles. Se deplace a quatre pattes.",
+    "initials": "G"
+  },
+  "sauron": {
+    "description": "Dans sa forme originelle, un Maia de haute stature a l'apparence seduisante. Plus tard, une silhouette sombre et terrifiante, couverte d'une armure noire. Son oeil sans paupiere brule comme une fournaise.",
+    "initials": "S"
+  },
+  "saroumane": {
+    "description": "Grand et majestueux, avec une longue barbe autrefois blanche devenue multicolore. Cheveux noirs stries de blanc. Voix envo{u}tante et persuasive. Porte de longues robes et tient un baton noir.",
+    "initials": "S"
+  },
+  "galadriel": {
+    "description": "Grande et belle au-dela des mots. Cheveux d'or et d'argent, les plus beaux de tous les Elfes. Yeux profonds comme des puits de sagesse. Elle rayonne d'une lumiere interieure pale et pure.",
+    "initials": "G"
+  },
+  "elrond": {
+    "description": "Visage sans age, ni jeune ni vieux, portant la memoire de milliers d'annees. Cheveux sombres, yeux gris aussi brillants que des etoiles. Porte un anneau d'or serti d'un saphir bleu.",
+    "initials": "E"
+  },
+  "arwen": {
+    "description": "Belle comme le crepuscule d'un soir d'ete. Cheveux sombres comme la nuit, yeux gris comme un soir sans nuages et emplis d'une lumiere d'etoile. Elle ressemble a Luthien revenue parmi les vivants.",
+    "initials": "A"
+  },
+  "eowyn": {
+    "description": "Grande et elancee, belle mais froide comme un matin de givre. Cheveux blonds et longs, visage pale et determine. Ses yeux gris brulent d'une flamme interieure contenue. Porte une robe blanche.",
+    "initials": "E"
+  },
+  "theoden": {
+    "description": "Roi vieilli avant l'age par la corruption. Cheveux blancs autrefois blonds. Visage ride mais redevenu fier apres sa liberation. Yeux bleus retrouvant leur eclat. Porte une armure doree et un heaume a criniere blanche.",
+    "initials": "T"
+  },
+  "eomer": {
+    "description": "Grand cavalier aux traits severes et fiers. Cheveux blonds sous un heaume orne d'une queue de cheval blanche. Large d'epaules, bras puissants. Regard feroce et loyal. Porte l'armure des Cavaliers de Rohan.",
+    "initials": "E"
+  },
+  "faramir": {
+    "description": "Grand et noble, ressemblant a son frere mais avec un air plus doux et pensif. Cheveux sombres, yeux gris emplis de sagesse. Visage grave mais bienveillant. Moins guerrier d'apparence, plus savant.",
+    "initials": "F"
+  },
+  "denethor": {
+    "description": "Grand et imposant malgre son age. Traits durs et austeres, cheveux blancs. Yeux sombres et percants, brulant d'une intelligence feroce. Porte un manteau noir et tient souvent un Palantir.",
+    "initials": "D"
+  },
+  "bilbon": {
+    "description": "Hobbit corpulent et jovial dans sa jeunesse, devenant maigre et presque transparent avec l'age. Pieds velus, yeux vifs et malicieux. Porte un gilet rouge et aime fumer la pipe.",
+    "initials": "B"
+  },
+  "thorin": {
+    "description": "Nain de noble allure, plus grand que la plupart de sa race. Barbe longue et sombre, tressee d'argent. Yeux bleus et fiers sous des sourcils epais. Porte un capuchon bleu ciel et une cape d'argent.",
+    "initials": "T"
+  },
+  "thranduil": {
+    "description": "Roi Elfe d'une beaute froide et imperieuse. Grands yeux bleus glacials, cheveux blonds presque blancs, tres longs. Porte une couronne de baies rouges et de feuilles. Visage impassible et hautain.",
+    "initials": "T"
+  },
+  "smaug": {
+    "description": "Dragon immense aux ecailles rouges dorees. Ventre incruste de gemmes et d'or. Yeux d'un rouge pale et hypnotique. Ailes gigantesques, griffes comme des lames. Crache un feu devastateur.",
+    "initials": "S"
+  },
+  "bard": {
+    "description": "Homme sombre et severe, descendant de la lignee de Dale. Visage taille a la serpe, cheveux noirs. Regard determine et sombre. Archer d'une precision mortelle. Porte des vetements simples de batelier.",
+    "initials": "B"
+  },
+  "radagast": {
+    "description": "Maia habille de brun, l'air debraille et excentrique. Barbe hirsute, vetements taches de terre et de mousse. Un nid d'oiseaux dans ses cheveux emmeles. Yeux doux et distraits, ami de toutes les betes.",
+    "initials": "R"
+  },
+  "azog": {
+    "description": "Orc pale gigantesque, bien plus grand que les autres Orcs. Peau blafarde couverte de cicatrices rituelles. Un bras tranche remplace par une prothese de metal. Yeux bleus glacials et cruels.",
+    "initials": "A"
+  },
+  "tauriel": {
+    "description": "Elfe sylvestre aux longs cheveux roux flamboyants. Visage fin et determine. Agile et mortelle au combat. Yeux verts et vifs. Plus jeune que la plupart des Elfes de la Foret Noire.",
+    "initials": "T"
+  },
+  "kili": {
+    "description": "Nain jeune et beau pour sa race, presque imberbe avec juste un debut de barbe sombre. Cheveux bruns, yeux sombres et vifs. Plus elance que les autres Nains. Habile a l'arc.",
+    "initials": "K"
+  },
+  "fili": {
+    "description": "Nain blond aux tresses soignees, frere aine de Kili. Barbe blonde naissante, visage jovial mais courageux. Porte de nombreuses armes cachees sur lui. Traits nobles de la lignee de Durin.",
+    "initials": "F"
+  },
+  "balin": {
+    "description": "Nain age a la barbe blanche et longue, au visage bienveillant et sage. Yeux doux et rides par les annees. Le plus vieux et le plus diplomate de la compagnie. Porte un capuchon rouge.",
+    "initials": "B"
+  },
+  "sylvebarbe": {
+    "description": "Creature d'arbre immense, haute de quatorze pieds. Ecorce brune et rugueuse, bras comme des branches. Yeux profonds, bruns et verts, emplis de la sagesse des ages. Longue barbe de mousse et de lichen.",
+    "initials": "S"
+  },
+  "roi-sorcier": {
+    "description": "Silhouette spectrale et terrifiante, invisible sous une grande robe noire et un capuchon. Couronne de fer sur une tete invisible. Yeux brulant d'un feu pale. Monte un destrier noir ou une bete ailee.",
+    "initials": "R-S"
+  },
+  "grima": {
+    "description": "Homme pale et sinueux au visage blafard. Cheveux gras et sombres, yeux lourds et retors. Levres minces et voix mielleuse. Se deplace en rampant presque, toujours dans l'ombre du roi.",
+    "initials": "G"
+  },
+  "haldir": {
+    "description": "Elfe grand et fier de la Lorien. Cheveux blonds et longs, traits fins et severes. Porte une cape grise elfique et un arc long. Regard vigilant et meprisant envers les etrangers.",
+    "initials": "H"
+  },
+  "celeborn": {
+    "description": "Elfe de haute stature aux cheveux d'argent pur. Visage noble et impassible, yeux gris et anciens. Le plus grand des Elfes de la Terre du Milieu. Porte des robes blanches et argentees.",
+    "initials": "C"
+  },
+  "gothmog": {
+    "description": "Orc difforme et massif, lieutenant de Minas Morgul. Visage defigure, un oeil plus bas que l'autre. Bras gauche atrophie. Voix rauque et autoritaire. Commande les armees de Mordor au Pelennor.",
+    "initials": "G"
+  },
+  "lurtz": {
+    "description": "Uruk-hai de grande taille, le premier ne des fosses d'Isengard. Peau sombre, muscles puissants. Visage bestial marque de la Main Blanche. Yeux jaunes et feroces. Ne connait ni peur ni pitie.",
+    "initials": "L"
+  },
+  "arachne": {
+    "description": "Araignee geante, descendante d'Ungoliant. Corps noir et gonf le comme une outre. Multiples yeux noirs et cruels. Pattes griffues et velues. Produit des toiles epaisses et un venin paralysant.",
+    "initials": "A"
+  },
+  "tom-bombadil": {
+    "description": "Homme jovial et etrange, plus vieux que les plus anciens. Visage rouge comme une pomme, yeux bleus et petillants. Porte des bottes jaunes, une veste bleue et un chapeau a longue plume.",
+    "initials": "T.B"
+  },
+  "feanor": {
+    "description": "Le plus beau et le plus puissant des Elfes. Yeux percants comme des flammes, cheveux noirs comme le jais. Visage fier et passionne. Ses mains ont forge les Silmarils, les plus beaux joyaux jamais crees.",
+    "initials": "F"
+  },
+  "morgoth": {
+    "description": "Autrefois le plus puissant des Valar, devenu sombre et terrible. Taille immense, armure noire. Couronne de fer sertie des trois Silmarils. Visage brule par les joyaux sacres. Mains noircies a jamais.",
+    "initials": "M"
+  },
+  "luthien": {
+    "description": "La plus belle de tous les Enfants d'Iluvatar. Cheveux sombres comme l'ombre de la nuit, yeux gris scintillants comme les etoiles. Sa voix fait fleurir les fleurs et fondre la glace. Peau lumineuse.",
+    "initials": "L"
+  },
+  "beren": {
+    "description": "Homme hardi aux traits durs, marque par les epreuves. Cheveux sombres et hirsutes apres des annees de solitude. Main droite tranchee par le loup Carcharoth. Regard farouche mais amoureux.",
+    "initials": "B"
+  },
+  "turin": {
+    "description": "Homme grand et sombre, beau mais au visage hante par le destin. Cheveux noirs, yeux gris et tristes. Porte un heaume de dragon et une epee noire. Son regard inspire la crainte et la pitie.",
+    "initials": "T.T"
+  },
+  "fingolfin": {
+    "description": "Haut Roi des Noldor, le plus vaillant des Elfes. Grande stature, armure etincelante. Yeux bleus brulant de courage. Son bouclier est bleu comme le ciel et son epee brille d'une lumiere froide.",
+    "initials": "F"
+  },
+  "glorfindel": {
+    "description": "Seigneur Elfe d'une beaute eclatante. Cheveux dores comme le soleil. Son visage brille d'une lumiere interieure. Revenu de la mort, il est entoure d'une aura visible dans le monde invisible.",
+    "initials": "G"
+  },
+  "halbrand": {
+    "description": "Homme mysterieux aux traits seduisants et ambigus. Cheveux bruns, barbe courte. Regard intense et calculateur sous un air de naufrage. Porte un pendentif ancien et des vetements uses.",
+    "initials": "H"
+  },
+  "nori": {
+    "description": "Jeune Pivelue (proto-Hobbit) petite et curieuse. Cheveux boucles et indisciplines, pieds velus. Visage rond et expressif. Yeux vifs pleins de malice et d'aventure. Toujours en mouvement.",
+    "initials": "N.B"
+  },
+  "durin-iv": {
+    "description": "Prince Nain fort et trapu. Barbe brune soignee, yeux bruns et determines. Porte une armure ornee et une couronne plus modeste que celle de son pere. Visage ouvert et amical pour un Nain.",
+    "initials": "D"
+  },
+  "arondir": {
+    "description": "Elfe guerrier a la peau sombre. Crane rase, traits fins et resolus. Yeux bruns et profonds. Silhouette athletique et agile. Porte une armure legere elfique verte et brune.",
+    "initials": "A"
+  },
+  "isildur": {
+    "description": "Homme de haute stature et de noble lignee. Cheveux sombres, barbe courte. Traits fiers et determines. Porte une armure d'argent et de noir. C'est lui qui trancha le doigt de l'Ennemi.",
+    "initials": "I"
+  },
+  "rosie": {
+    "description": "Hobbit au visage doux et avenant. Cheveux boucles et clairs, joues roses. Yeux chaleureux et accueillants. Simple et aimante, elle incarne la beaute modeste de la Comte.",
+    "initials": "R.C"
+  },
+  "gamling": {
+    "description": "Vieux guerrier de Rohan aux cheveux gris. Visage ride et weathered, marque par les batailles. Armure usee mais bien entretenue. Loyal et stoique, toujours aux cotes de son roi.",
+    "initials": "G"
+  },
+  "bouche-de-sauron": {
+    "description": "Homme de haute taille au visage cache par un heaume noir. Bouche grande et cruelle, seule partie visible, aux levres livides. Voix moqueuse et arrogante. Porte une armure noire ornee de l'Oeil.",
+    "initials": "B.S"
+  }
+}

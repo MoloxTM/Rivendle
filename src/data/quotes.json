@@ -1,0 +1,242 @@
+[
+  {
+    "id": "q1",
+    "text": "Un magicien n'est jamais en retard, ni en avance. Il arrive precisement a l'heure prevue.",
+    "characterId": "gandalf",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q2",
+    "text": "On ne passe pas !",
+    "characterId": "gandalf",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q3",
+    "text": "Mon precieux...",
+    "characterId": "gollum",
+    "source": "Les Deux Tours"
+  },
+  {
+    "id": "q4",
+    "text": "Meme la plus petite personne peut changer le cours de l'avenir.",
+    "characterId": "galadriel",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q5",
+    "text": "Je suis un serviteur du Feu Secret, detenteur de la flamme d'Anor.",
+    "characterId": "gandalf",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q6",
+    "text": "Un jour viendra ou le courage des Hommes faiblira... mais ce n'est pas ce jour.",
+    "characterId": "aragorn",
+    "source": "Le Retour du Roi"
+  },
+  {
+    "id": "q7",
+    "text": "Je ne peux pas porter le fardeau pour vous, mais je peux vous porter, vous !",
+    "characterId": "sam",
+    "source": "Le Retour du Roi"
+  },
+  {
+    "id": "q8",
+    "text": "Ce n'est pas parce qu'une chose est difficile que nous n'osons pas, c'est parce que nous n'osons pas qu'elle est difficile.",
+    "characterId": "gandalf",
+    "source": "Le Retour du Roi"
+  },
+  {
+    "id": "q9",
+    "text": "Je suis Gandalf le Blanc. Et je reviens vers vous en ce tournant de la maree.",
+    "characterId": "gandalf",
+    "source": "Les Deux Tours"
+  },
+  {
+    "id": "q10",
+    "text": "Tout ce qui est or ne brille pas, tous ceux qui errent ne sont pas perdus.",
+    "characterId": "aragorn",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q11",
+    "text": "Le monde est en changement. Je le sens dans l'eau. Je le sens dans la terre. Je le sens dans l'air.",
+    "characterId": "galadriel",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q12",
+    "text": "Il n'y a qu'une seule chose que nous ayons a decider : que faire du temps qui nous est imparti.",
+    "characterId": "gandalf",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q13",
+    "text": "Je n'ai pas peur de la mort.",
+    "characterId": "eowyn",
+    "source": "Le Retour du Roi"
+  },
+  {
+    "id": "q14",
+    "text": "Je suis le Seigneur de la Moria. Et je reclame votre loyaute.",
+    "characterId": "thorin",
+    "source": "Le Hobbit : Un Voyage Inattendu"
+  },
+  {
+    "id": "q15",
+    "text": "Si je recule, je meurs. Si j'avance, je meurs. Autant avancer et mourir.",
+    "characterId": "theoden",
+    "source": "Le Retour du Roi"
+  },
+  {
+    "id": "q16",
+    "text": "Je suis la fille-bouclier de Rohan et je ne suis pas un homme.",
+    "characterId": "eowyn",
+    "source": "Le Retour du Roi"
+  },
+  {
+    "id": "q17",
+    "text": "Les nains n'ont pas besoin de nager. Tres peu de gens le savent.",
+    "characterId": "gimli",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q18",
+    "text": "Vous avez mon epee.",
+    "characterId": "aragorn",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q19",
+    "text": "Et mon arc.",
+    "characterId": "legolas",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q20",
+    "text": "Et ma hache !",
+    "characterId": "gimli",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q21",
+    "text": "Un Anneau pour les gouverner tous.",
+    "characterId": "sauron",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q22",
+    "text": "Le monde des Hommes va tomber. Et de ses cendres naitra un nouvel ordre.",
+    "characterId": "saroumane",
+    "source": "Les Deux Tours"
+  },
+  {
+    "id": "q23",
+    "text": "Il y a du bon en ce monde, Monsieur Frodon. Et ca vaut la peine de se battre pour ca.",
+    "characterId": "sam",
+    "source": "Les Deux Tours"
+  },
+  {
+    "id": "q24",
+    "text": "Je suis le feu. Je suis... la mort.",
+    "characterId": "smaug",
+    "source": "Le Hobbit : La Desolation de Smaug"
+  },
+  {
+    "id": "q25",
+    "text": "Vous voulez connaitre mon nom ? Tout le monde veut connaitre mon nom.",
+    "characterId": "bilbon",
+    "source": "Le Hobbit : Un Voyage Inattendu"
+  },
+  {
+    "id": "q26",
+    "text": "J'aimerais que l'Anneau ne soit jamais venu jusqu'a moi.",
+    "characterId": "frodon",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q27",
+    "text": "Mon frere, mon capitaine, mon roi.",
+    "characterId": "boromir",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q28",
+    "text": "Au bord du gouffre, on ne peut qu'avancer.",
+    "characterId": "aragorn",
+    "source": "Les Deux Tours"
+  },
+  {
+    "id": "q29",
+    "text": "Nous avons decide. Les Ents vont en guerre.",
+    "characterId": "sylvebarbe",
+    "source": "Les Deux Tours"
+  },
+  {
+    "id": "q30",
+    "text": "Les feuilles meurent, l'arbre reste.",
+    "characterId": "sylvebarbe",
+    "source": "Les Deux Tours"
+  },
+  {
+    "id": "q31",
+    "text": "Qu'est-ce que la vie pour vous ? Votre cheval ? Votre or ? Laissez-moi vous dire : la vie est espoir.",
+    "characterId": "faramir",
+    "source": "Les Deux Tours"
+  },
+  {
+    "id": "q32",
+    "text": "L'heure est venue. Cavaliers de Rohan ! Les serments seront tenus !",
+    "characterId": "theoden",
+    "source": "Le Retour du Roi"
+  },
+  {
+    "id": "q33",
+    "text": "Tu ne me fais pas peur, spectre de Morgul. Recule ! Retourne vers le neant qui t'attend.",
+    "characterId": "aragorn",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q34",
+    "text": "Meme les plus sages ne peuvent voir toutes les fins.",
+    "characterId": "gandalf",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q35",
+    "text": "Qu'est-ce que le hobbit a dans ses poches ?",
+    "characterId": "gollum",
+    "source": "Le Hobbit : Un Voyage Inattendu"
+  },
+  {
+    "id": "q36",
+    "text": "C'est l'annulaire que je lui ai tranche.",
+    "characterId": "isildur",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q37",
+    "text": "Soyez en paix, fils de Gondor.",
+    "characterId": "aragorn",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q38",
+    "text": "Je ne veux pas y aller, Sam. Pas au Mont Destin.",
+    "characterId": "frodon",
+    "source": "Le Retour du Roi"
+  },
+  {
+    "id": "q39",
+    "text": "Il n'y a pas de malediction en ce monde qui soit au-dela de ma puissance.",
+    "characterId": "elrond",
+    "source": "La Communaute de l'Anneau"
+  },
+  {
+    "id": "q40",
+    "text": "A ma place, vous mourriez. Et moi a votre place, je ne le ferais pas.",
+    "characterId": "denethor",
+    "source": "Le Retour du Roi"
+  }
+]
