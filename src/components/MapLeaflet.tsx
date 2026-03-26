@@ -18,9 +18,34 @@ function createIcon(color: string, size: number = 14) {
   });
 }
 
-const guessIcon = createIcon("#c9a84c", 14);
+function createLabeledIcon(color: string, label: string, size: number = 14) {
+  return L.divIcon({
+    className: "",
+    html: `
+      <div style="position:relative;width:${size}px;height:${size}px;">
+        <div style="
+          position:absolute;
+          bottom:${size + 5}px;
+          left:50%;
+          transform:translateX(-50%);
+          background:rgba(10,10,10,0.85);
+          color:${color};
+          font-size:11px;
+          font-weight:700;
+          padding:2px 6px;
+          border-radius:4px;
+          white-space:nowrap;
+          border:1px solid ${color};
+          pointer-events:none;
+        ">${label}</div>
+        <div style="width:${size}px;height:${size}px;background:${color};border-radius:50%;border:2px solid white;box-shadow:0 0 6px rgba(0,0,0,0.5);"></div>
+      </div>`,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+  });
+}
+
 const correctIcon = createIcon("#538d4e", 20);
-const closestIcon = createIcon("#c9a84c", 16);
 
 export interface MapGuess {
   lat: number;
@@ -114,7 +139,7 @@ export default function MapLeaflet({
         pendingMarkerRef.current.remove();
       }
 
-      const marker = L.marker(e.latlng, { icon: guessIcon }).addTo(map);
+      const marker = L.marker(e.latlng, { icon: createIcon("#c9a84c", 14) }).addTo(map);
       pendingMarkerRef.current = marker;
       setPendingPos({ lat: e.latlng.lat, lng: e.latlng.lng });
     };
@@ -125,6 +150,25 @@ export default function MapLeaflet({
     };
   }, [disabled]);
 
+  // Auto-zoom when game ends to fit correct position + closest guess
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !gameOver || !correctPosition) return;
+
+    const points: L.LatLngExpression[] = [
+      [correctPosition.lat, correctPosition.lng],
+    ];
+    if (closestGuess) {
+      points.push([closestGuess.lat, closestGuess.lng]);
+    }
+
+    const bounds = L.latLngBounds(points);
+    const t = setTimeout(() => {
+      map.flyToBounds(bounds, { padding: [80, 80], maxZoom: 1, duration: 1.5 });
+    }, 600);
+    return () => clearTimeout(t);
+  }, [gameOver, correctPosition, closestGuess]);
+
   // Draw guesses, correct position, and connecting line
   useEffect(() => {
     const map = mapRef.current;
@@ -132,11 +176,12 @@ export default function MapLeaflet({
 
     const layers: L.Layer[] = [];
 
-    // During game: show all past guesses as small gold dots
-    // At end: show all guesses, highlight closest
+    // Draw guesses with distance label above each dot
     guesses.forEach((g) => {
       const isClosest = closestGuess && g === closestGuess;
-      const icon = gameOver && isClosest ? closestIcon : guessIcon;
+      const color = gameOver && isClosest ? "#e8c84a" : "#c9a84c";
+      const size = gameOver && isClosest ? 16 : 14;
+      const icon = createLabeledIcon(color, `${g.distance} lieues`, size);
       const marker = L.marker([g.lat, g.lng], { icon }).addTo(map);
       layers.push(marker);
     });

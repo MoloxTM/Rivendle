@@ -7,6 +7,13 @@ import { recordWin, recordLoss } from "@/lib/stats";
 import Countdown from "./Countdown";
 import type { MapGuess } from "./MapLeaflet";
 
+function distanceEmoji(distance: number): string {
+  if (distance < 200) return "🟩";
+  if (distance < 600) return "🟨";
+  if (distance < 1200) return "🟧";
+  return "🟥";
+}
+
 const MapLeaflet = dynamic(() => import("./MapLeaflet"), { ssr: false });
 
 const MAX_ATTEMPTS = 3;
@@ -24,6 +31,7 @@ export default function MapGame() {
   const [bestScore, setBestScore] = useState<number | null>(null);
   const [hints, setHints] = useState<string[]>([]);
   const [loaded, setLoaded] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     fetch("/api/daily/map")
@@ -108,6 +116,22 @@ export default function MapGame() {
     },
     [gameOver, guesses, locationName]
   );
+
+  const handleShare = useCallback(() => {
+    const emojiRow = guesses.map((g) => distanceEmoji(g.distance)).join("");
+    const result = won ? `🟩 Trouvé en ${guesses.length}/${MAX_ATTEMPTS}` : `❌ Perdu`;
+    const text = [
+      `Rivendle #${dayNumber} - Carte 🗺️`,
+      `📍 ${locationName}`,
+      `${result} — Score : ${bestScore ?? 0}/5000`,
+      emojiRow,
+      `https://rivendle.com/map`,
+    ].join("\n");
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  }, [guesses, won, dayNumber, locationName, bestScore]);
 
   // Find closest guess for end-game line
   const closestGuess =
@@ -210,6 +234,13 @@ export default function MapGame() {
               );
             })}
           </div>
+
+          <button
+            onClick={handleShare}
+            className="rounded-lg border border-white/10 bg-surface px-5 py-2 text-sm font-medium text-text transition-colors hover:bg-white/10"
+          >
+            {copied ? "✓ Copié !" : "Partager le résultat"}
+          </button>
 
           <Countdown />
         </div>
