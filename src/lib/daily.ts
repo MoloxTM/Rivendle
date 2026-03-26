@@ -1,5 +1,6 @@
 import characters from "@/data/characters.json";
 import quotes from "@/data/quotes.json";
+import locations from "@/data/locations.json";
 import type { DailyData } from "./types";
 
 // Simple seeded random number generator
@@ -37,11 +38,13 @@ export function getDailyData(dateStr: string): DailyData {
   const quoteIndex = Math.floor(rng() * quotes.length);
   // For image mode, reuse character pool with different seed position
   const imageIndex = Math.floor(rng() * characters.length);
+  const mapIndex = Math.floor(rng() * locations.length);
 
   return {
     classicCharacterId: characters[classicIndex].id,
     quoteId: quotes[quoteIndex].id,
     imageId: characters[imageIndex].id,
+    mapLocationId: locations[mapIndex].id,
     dayNumber,
   };
 }

@@ -102,9 +102,21 @@ export interface GameStats {
   lastPlayedDate: string;
 }
 
+export interface Location {
+  id: string;
+  name: string;
+  description: string;
+  region: string;
+  lat: number;
+  lng: number;
+  tolerance?: number;
+  polygon?: [number, number][];
+}
+
 export interface DailyData {
   classicCharacterId: string;
   quoteId: string;
   imageId: string;
+  mapLocationId: string;
   dayNumber: number;
 }

@@ -7,6 +7,7 @@ const modes = [
   { name: "Classic", href: "/" },
   { name: "Citation", href: "/quote" },
   { name: "Image", href: "/image" },
+  { name: "Carte", href: "/map" },
 ];
 
 interface HeaderProps {
