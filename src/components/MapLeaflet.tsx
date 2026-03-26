@@ -359,7 +359,7 @@ export default function MapLeaflet({
 
       {/* Cheat input */}
       {showCheatInput && !cheatActive && (
-        <div className="absolute top-12 left-3 z-[1001] flex gap-1">
+        <div className="absolute bottom-12 left-3 z-[1001] flex gap-1">
           <input
             autoFocus
             type="password"
@@ -386,7 +386,7 @@ export default function MapLeaflet({
 
       {/* Cheat active indicator */}
       {cheatActive && (
-        <div className="absolute top-3 left-12 z-[1001] flex items-center gap-1.5 rounded-md bg-surface/90 border border-gold/40 px-2 py-1 text-xs text-gold backdrop-blur-sm">
+        <div className="absolute bottom-3 left-12 z-[1001] flex items-center gap-1.5 rounded-md bg-surface/90 border border-gold/40 px-2 py-1 text-xs text-gold backdrop-blur-sm">
           <span>CHEAT</span>
           <span className="flex items-center gap-0.5 text-[9px] text-text-dim">
             <span className="inline-block w-2 h-2 rounded-full bg-[#ff4444]" />≤80
