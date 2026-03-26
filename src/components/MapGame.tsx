@@ -32,6 +32,7 @@ export default function MapGame() {
   const [hints, setHints] = useState<string[]>([]);
   const [loaded, setLoaded] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [tolerance, setTolerance] = useState(200);
 
   useEffect(() => {
     fetch("/api/daily/map")
@@ -39,6 +40,7 @@ export default function MapGame() {
       .then((data) => {
         setLocationName(data.name);
         setDayNumber(data.dayNumber);
+        if (data.tolerance) setTolerance(data.tolerance);
       });
 
     const saved = loadMapGameState();
@@ -91,6 +93,7 @@ export default function MapGame() {
         setWon(true);
         setGameOver(true);
         setCorrectPosition({ lat: data.correctLat, lng: data.correctLng });
+        if (data.tolerance) setTolerance(data.tolerance);
         recordWin("map", attempt, todayStr);
         saveMapGameState(
           newGuesses,
@@ -102,6 +105,7 @@ export default function MapGame() {
       } else if (attempt >= MAX_ATTEMPTS) {
         setGameOver(true);
         setCorrectPosition({ lat: data.correctLat, lng: data.correctLng });
+        if (data.tolerance) setTolerance(data.tolerance);
         recordLoss("map", todayStr);
         saveMapGameState(
           newGuesses,
@@ -180,6 +184,7 @@ export default function MapGame() {
           gameOver={gameOver}
           onPlaceGuess={handlePlaceGuess}
           disabled={gameOver}
+          tolerance={tolerance}
         />
       )}
 

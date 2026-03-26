@@ -109,6 +109,8 @@ export interface Location {
   region: string;
   lat: number;
   lng: number;
+  tolerance?: number;
+  polygon?: [number, number][];
 }
 
 export interface DailyData {

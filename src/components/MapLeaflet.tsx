@@ -3,6 +3,15 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import locationsData from "@/data/locations.json";
+
+function toleranceColor(t: number): string {
+  if (t <= 80)  return "#ff4444";
+  if (t <= 150) return "#ff8800";
+  if (t <= 250) return "#e8c84a";
+  if (t <= 400) return "#44bb88";
+  return "#4488ff";
+}
 
 const MAP_BOUNDS: L.LatLngBoundsExpression = [
   [0, 0],
@@ -61,6 +70,7 @@ interface MapLeafletProps {
   gameOver: boolean;
   onPlaceGuess: (lat: number, lng: number) => void;
   disabled: boolean;
+  tolerance: number;
 }
 
 export default function MapLeaflet({
@@ -71,12 +81,16 @@ export default function MapLeaflet({
   gameOver,
   onPlaceGuess,
   disabled,
+  tolerance,
 }: MapLeafletProps) {
   const mapRef = useRef<L.Map | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const pendingMarkerRef = useRef<L.Marker | null>(null);
   const [pendingPos, setPendingPos] = useState<{ lat: number; lng: number } | null>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [cheatActive, setCheatActive] = useState(false);
+  const [cheatInput, setCheatInput] = useState("");
+  const [showCheatInput, setShowCheatInput] = useState(false);
 
   // Escape key exits fullscreen
   useEffect(() => {
@@ -169,6 +183,72 @@ export default function MapLeaflet({
     return () => clearTimeout(t);
   }, [gameOver, correctPosition, closestGuess]);
 
+  // Cheat mode: draw all locations with tolerance circles
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !cheatActive) return;
+
+    const layers: L.Layer[] = [];
+
+    (locationsData as Array<{ id: string; name: string; lat: number; lng: number; tolerance?: number; polygon?: [number, number][] }>).forEach((loc) => {
+      const color = toleranceColor(loc.tolerance ?? 200);
+
+      const icon = L.divIcon({
+        className: "",
+        html: `
+          <div style="position:relative;width:8px;height:8px;">
+            <div style="
+              position:absolute;
+              bottom:13px;
+              left:50%;
+              transform:translateX(-50%);
+              background:rgba(5,5,5,0.9);
+              color:${color};
+              font-size:9px;
+              font-weight:700;
+              padding:1px 4px;
+              border-radius:3px;
+              white-space:nowrap;
+              border:1px solid ${color};
+              pointer-events:none;
+            ">${loc.name}${loc.polygon ? " ⬡" : ` (${loc.tolerance ?? 200})`}</div>
+            <div style="width:8px;height:8px;background:${color};border-radius:50%;border:1px solid white;"></div>
+          </div>`,
+        iconSize: [8, 8],
+        iconAnchor: [4, 4],
+      });
+
+      layers.push(L.marker([loc.lat, loc.lng], { icon }).addTo(map));
+
+      if (loc.polygon) {
+        layers.push(
+          L.polygon(loc.polygon as [number, number][], {
+            color,
+            weight: 1.5,
+            dashArray: "5, 4",
+            fillColor: color,
+            fillOpacity: 0.1,
+            opacity: 0.7,
+          }).addTo(map)
+        );
+      } else {
+        layers.push(
+          L.circle([loc.lat, loc.lng], {
+            radius: loc.tolerance ?? 200,
+            color,
+            weight: 1,
+            dashArray: "5, 4",
+            fillColor: color,
+            fillOpacity: 0.06,
+            opacity: 0.6,
+          }).addTo(map)
+        );
+      }
+    });
+
+    return () => layers.forEach((l) => l.remove());
+  }, [cheatActive]);
+
   // Draw guesses, correct position, and connecting line
   useEffect(() => {
     const map = mapRef.current;
@@ -192,6 +272,21 @@ export default function MapLeaflet({
         icon: correctIcon,
       }).addTo(map);
       layers.push(marker);
+
+      // Dashed tolerance circle around correct position
+      const circle = L.circle(
+        [correctPosition.lat, correctPosition.lng],
+        {
+          radius: tolerance,
+          color: "#538d4e",
+          weight: 2,
+          dashArray: "8, 6",
+          fillColor: "#538d4e",
+          fillOpacity: 0.08,
+          opacity: 0.7,
+        }
+      ).addTo(map);
+      layers.push(circle);
 
       // Dashed line from closest guess to correct position
       if (closestGuess) {
@@ -240,6 +335,68 @@ export default function MapLeaflet({
           border: isFullscreen ? "none" : "2px solid rgba(255,255,255,0.1)",
         }}
       />
+
+      {/* Cheat button */}
+      <button
+        onClick={() => {
+          if (cheatActive) {
+            setCheatActive(false);
+            setShowCheatInput(false);
+            setCheatInput("");
+          } else {
+            setShowCheatInput((v) => !v);
+          }
+        }}
+        className="absolute top-3 left-3 z-[1001] rounded-md bg-surface/90 border border-white/10 p-2 text-text-dim hover:text-text hover:bg-surface transition-colors backdrop-blur-sm"
+        title="Mode triche"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+          <line x1="12" y1="17" x2="12.01" y2="17" />
+        </svg>
+      </button>
+
+      {/* Cheat input */}
+      {showCheatInput && !cheatActive && (
+        <div className="absolute top-12 left-3 z-[1001] flex gap-1">
+          <input
+            autoFocus
+            type="password"
+            value={cheatInput}
+            onChange={(e) => setCheatInput(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                if (cheatInput === "toto") {
+                  setCheatActive(true);
+                  setShowCheatInput(false);
+                }
+                setCheatInput("");
+              }
+              if (e.key === "Escape") {
+                setShowCheatInput(false);
+                setCheatInput("");
+              }
+            }}
+            placeholder="code…"
+            className="w-24 rounded-md bg-surface border border-white/20 px-2 py-1 text-xs text-text outline-none focus:border-gold"
+          />
+        </div>
+      )}
+
+      {/* Cheat active indicator */}
+      {cheatActive && (
+        <div className="absolute top-3 left-12 z-[1001] flex items-center gap-1.5 rounded-md bg-surface/90 border border-gold/40 px-2 py-1 text-xs text-gold backdrop-blur-sm">
+          <span>CHEAT</span>
+          <span className="flex items-center gap-0.5 text-[9px] text-text-dim">
+            <span className="inline-block w-2 h-2 rounded-full bg-[#ff4444]" />≤80
+            <span className="inline-block w-2 h-2 rounded-full bg-[#ff8800] ml-1" />≤150
+            <span className="inline-block w-2 h-2 rounded-full bg-[#e8c84a] ml-1" />≤250
+            <span className="inline-block w-2 h-2 rounded-full bg-[#44bb88] ml-1" />≤400
+            <span className="inline-block w-2 h-2 rounded-full bg-[#4488ff] ml-1" />&gt;400
+          </span>
+        </div>
+      )}
 
       {/* Fullscreen toggle */}
       <button

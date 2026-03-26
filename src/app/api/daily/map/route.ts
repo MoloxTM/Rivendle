@@ -3,7 +3,19 @@ import { getDailyData, getTodayString } from "@/lib/daily";
 import locations from "@/data/locations.json";
 
 const MAX_ATTEMPTS = 3;
-const WIN_THRESHOLD = 200;
+const DEFAULT_TOLERANCE = 200;
+
+function pointInPolygon(lat: number, lng: number, polygon: [number, number][]): boolean {
+  let inside = false;
+  for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
+    const [yi, xi] = polygon[i];
+    const [yj, xj] = polygon[j];
+    if ((yi > lat) !== (yj > lat) && lng < ((xj - xi) * (lat - yi)) / (yj - yi) + xi) {
+      inside = !inside;
+    }
+  }
+  return inside;
+}
 
 export async function GET() {
   const today = getTodayString();
@@ -18,10 +30,12 @@ export async function GET() {
   }
 
   // Return name but NOT coordinates or hints (hints revealed per attempt)
+  const locTolerance = (location as { tolerance?: number }).tolerance ?? DEFAULT_TOLERANCE;
   return NextResponse.json({
     name: location.name,
     description: location.description,
     region: location.region,
+    tolerance: locTolerance,
     dayNumber: daily.dayNumber,
   });
 }
@@ -43,8 +57,12 @@ export async function POST(request: Request) {
     Math.pow(lat - location.lat, 2) + Math.pow(lng - location.lng, 2)
   );
 
+  const loc = location as { tolerance?: number; polygon?: [number, number][] };
+  const tolerance = loc.tolerance ?? DEFAULT_TOLERANCE;
   const roundedDistance = Math.round(distance);
-  const isCorrect = distance < WIN_THRESHOLD;
+  const isCorrect = loc.polygon
+    ? pointInPolygon(lat, lng, loc.polygon)
+    : distance < tolerance;
   const score = Math.round(5000 * Math.exp(-distance / 1200));
   const isLastAttempt = attempt >= MAX_ATTEMPTS;
 
@@ -65,7 +83,7 @@ export async function POST(request: Request) {
     hint,
     // Only reveal correct position when game ends
     ...(isCorrect || isLastAttempt
-      ? { correctLat: location.lat, correctLng: location.lng }
+      ? { correctLat: location.lat, correctLng: location.lng, tolerance }
       : {}),
   });
 }
