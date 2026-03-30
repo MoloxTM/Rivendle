@@ -347,7 +347,7 @@ export default function MapLeaflet({
             setShowCheatInput((v) => !v);
           }
         }}
-        className="invisible absolute bottom-3 left-3 z-[1001] rounded-md bg-surface/90 border border-white/10 p-2 text-text-dim hover:text-text hover:bg-surface transition-colors backdrop-blur-sm"
+        className="absolute bottom-3 left-3 z-[1001] rounded-md bg-surface/90 border border-white/10 p-2 text-text-dim hover:text-text hover:bg-surface transition-colors backdrop-blur-sm"
         title="Mode triche"
       >
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
