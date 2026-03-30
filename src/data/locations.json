@@ -1,0 +1,2387 @@
+[
+  {
+    "id": "hobbiton",
+    "name": "Hobbiton",
+    "description": "Village paisible de la Comté, terre natale de Bilbon et Frodon Sacquet.",
+    "region": "Comté",
+    "lat": 4919,
+    "lng": 2080,
+    "tolerance": 22
+  },
+  {
+    "id": "fondcombe",
+    "name": "Fondcombe",
+    "description": "Refuge elfique fondé par Elrond, niché dans une vallée cachée au pied des Monts Brumeux.",
+    "region": "Eriador",
+    "lat": 4932,
+    "lng": 3835,
+    "tolerance": 55
+  },
+  {
+    "id": "minas-tirith",
+    "name": "Minas Tirith",
+    "description": "La Cité Blanche, capitale du Gondor, bâtie sur sept niveaux dans la roche.",
+    "region": "Gondor",
+    "lat": 2228,
+    "lng": 5045,
+    "tolerance": 45
+  },
+  {
+    "id": "mordor",
+    "name": "Barad-dûr",
+    "description": "La tour sombre de Sauron, forteresse du Seigneur Ténébreux au cœur du Mordor.",
+    "region": "Mordor",
+    "lat": 2492,
+    "lng": 5902,
+    "tolerance": 45
+  },
+  {
+    "id": "mont-destin",
+    "name": "Mont Destin",
+    "description": "L'Orodruin, volcan du Mordor où fut forgé l'Anneau Unique et où il fut détruit.",
+    "region": "Mordor",
+    "lat": 2518,
+    "lng": 5699,
+    "tolerance": 38
+  },
+  {
+    "id": "isengard",
+    "name": "Isengard",
+    "description": "Forteresse de Saroumane dominée par la tour d'Orthanc, au pied des Monts Brumeux.",
+    "region": "Rohan",
+    "lat": 3102,
+    "lng": 3483,
+    "tolerance": 65
+  },
+  {
+    "id": "edoras",
+    "name": "Edoras",
+    "description": "Capitale du Rohan, cité du roi Théoden perchée sur une colline et couronnée par Meduseld.",
+    "region": "Rohan",
+    "lat": 2737,
+    "lng": 3926,
+    "tolerance": 40
+  },
+  {
+    "id": "gouffre-de-helm",
+    "name": "Gouffre de Helm",
+    "description": "Forteresse du Rohan creusée dans la montagne, lieu de la célèbre bataille.",
+    "region": "Rohan",
+    "lat": 2930,
+    "lng": 3658,
+    "tolerance": 52
+  },
+  {
+    "id": "lothlorien",
+    "name": "Lothlórien",
+    "description": "Forêt dorée des Elfes, royaume de Galadriel et Celeborn, aux arbres mallorn.",
+    "region": "Rhovanion",
+    "lat": 4033,
+    "lng": 4148,
+    "tolerance": 450,
+    "polygon": [
+      [
+        4088,
+        4040
+      ],
+      [
+        4060,
+        4200
+      ],
+      [
+        3980,
+        4279
+      ],
+      [
+        3900,
+        4265
+      ],
+      [
+        3888,
+        4120
+      ],
+      [
+        3920,
+        4030
+      ],
+      [
+        4010,
+        4028
+      ]
+    ]
+  },
+  {
+    "id": "moria",
+    "name": "Mines de la Moria",
+    "description": "L'antique Khazad-dûm, immense cité souterraine des Nains sous les Monts Brumeux.",
+    "region": "Monts Brumeux",
+    "lat": 4175,
+    "lng": 3656,
+    "tolerance": 300,
+    "polygon": [
+      [
+        4330,
+        3530
+      ],
+      [
+        4310,
+        3720
+      ],
+      [
+        4240,
+        3810
+      ],
+      [
+        4090,
+        3800
+      ],
+      [
+        4020,
+        3710
+      ],
+      [
+        4030,
+        3560
+      ],
+      [
+        4130,
+        3500
+      ],
+      [
+        4270,
+        3510
+      ]
+    ]
+  },
+  {
+    "id": "fangorn",
+    "name": "Forêt de Fangorn",
+    "description": "Forêt ancienne peuplée d'Ents, les gardiens des arbres, menée par Sylvebarbe.",
+    "region": "Rohan",
+    "lat": 3496,
+    "lng": 3941,
+    "tolerance": 700,
+    "polygon": [
+      [
+        3780,
+        3740
+      ],
+      [
+        3790,
+        3920
+      ],
+      [
+        3740,
+        4080
+      ],
+      [
+        3600,
+        4120
+      ],
+      [
+        3430,
+        4100
+      ],
+      [
+        3290,
+        3980
+      ],
+      [
+        3260,
+        3820
+      ],
+      [
+        3360,
+        3700
+      ],
+      [
+        3560,
+        3700
+      ]
+    ]
+  },
+  {
+    "id": "erebor",
+    "name": "Erebor",
+    "description": "La Montagne Solitaire, royaume des Nains reconquis par Thorin Écu-de-Chêne.",
+    "region": "Rhovanion",
+    "lat": 5489,
+    "lng": 5348,
+    "tolerance": 65
+  },
+  {
+    "id": "dale",
+    "name": "Dale",
+    "description": "Cité des Hommes au pied d'Erebor, détruite par Smaug puis reconstruite par Bard.",
+    "region": "Rhovanion",
+    "lat": 5435,
+    "lng": 5368,
+    "tolerance": 32
+  },
+  {
+    "id": "esgaroth",
+    "name": "Lac-ville",
+    "description": "Ville lacustre des Hommes sur le Long Lac, au sud d'Erebor.",
+    "region": "Rhovanion",
+    "lat": 5350,
+    "lng": 5343,
+    "tolerance": 40
+  },
+  {
+    "id": "foret-noire",
+    "name": "Forêt Noire",
+    "description": "Grande forêt de Rhovanion, autrefois Vertbois-le-Grand, assombrie par l'ombre de Dol Guldur.",
+    "region": "Rhovanion",
+    "lat": 4835,
+    "lng": 5022,
+    "tolerance": 700,
+    "polygon": [
+      [
+        5720,
+        4720
+      ],
+      [
+        5740,
+        4980
+      ],
+      [
+        5680,
+        5200
+      ],
+      [
+        5450,
+        5290
+      ],
+      [
+        5100,
+        5380
+      ],
+      [
+        4800,
+        5480
+      ],
+      [
+        4490,
+        5450
+      ],
+      [
+        4220,
+        5340
+      ],
+      [
+        3990,
+        5100
+      ],
+      [
+        3830,
+        4920
+      ],
+      [
+        3800,
+        4680
+      ],
+      [
+        3900,
+        4540
+      ],
+      [
+        4200,
+        4545
+      ],
+      [
+        4550,
+        4545
+      ],
+      [
+        4850,
+        4560
+      ],
+      [
+        5000,
+        4585
+      ],
+      [
+        5200,
+        4610
+      ],
+      [
+        5450,
+        4660
+      ],
+      [
+        5620,
+        4700
+      ]
+    ]
+  },
+  {
+    "id": "dol-guldur",
+    "name": "Dol Guldur",
+    "description": "Ancienne forteresse du Nécromancien (Sauron) dans le sud de la Forêt Noire.",
+    "region": "Rhovanion",
+    "lat": 4009,
+    "lng": 4721,
+    "tolerance": 55
+  },
+  {
+    "id": "amon-sul",
+    "name": "Amon Sûl",
+    "description": "Le Mont Venteux, ancienne tour de guet du royaume d'Arnor, où Frodon fut poignardé.",
+    "region": "Eriador",
+    "lat": 4865,
+    "lng": 2936,
+    "tolerance": 32
+  },
+  {
+    "id": "havres-gris",
+    "name": "Les Havres Gris",
+    "description": "Port elfique à l'ouest de la Terre du Milieu, d'où partent les navires vers les Terres Immortelles.",
+    "region": "Lindon",
+    "lat": 4908,
+    "lng": 1270,
+    "tolerance": 40
+  },
+  {
+    "id": "bree",
+    "name": "Bree",
+    "description": "Village à la croisée des chemins où se rencontrèrent Grands-Pas et les Hobbits au Poney Fringant.",
+    "region": "Eriador",
+    "lat": 4852,
+    "lng": 2575,
+    "tolerance": 38
+  },
+  {
+    "id": "minas-morgul",
+    "name": "Minas Morgul",
+    "description": "Autrefois Minas Ithil, cité de la Lune, tombée aux mains des Nazgûl.",
+    "region": "Mordor",
+    "lat": 2305,
+    "lng": 5346,
+    "tolerance": 38
+  },
+  {
+    "id": "cirith-ungol",
+    "name": "Cirith Ungol",
+    "description": "Col périlleux menant au Mordor, gardé par le repaire d'Arachne et une tour d'Orques.",
+    "region": "Mordor",
+    "lat": 2362,
+    "lng": 5365,
+    "tolerance": 28
+  },
+  {
+    "id": "osgiliath",
+    "name": "Osgiliath",
+    "description": "Ancienne capitale du Gondor sur l'Anduin, en ruines lors de la Guerre de l'Anneau.",
+    "region": "Gondor",
+    "lat": 2271,
+    "lng": 5189,
+    "tolerance": 55
+  },
+  {
+    "id": "pelargir",
+    "name": "Pelargir",
+    "description": "Grand port du Gondor sur l'Anduin, pris par les Corsaires d'Umbar puis libéré par Aragorn.",
+    "region": "Gondor",
+    "lat": 1728,
+    "lng": 4969,
+    "tolerance": 45
+  },
+  {
+    "id": "umbar",
+    "name": "Umbar",
+    "description": "Port des Corsaires au sud du Gondor, base des pirates et ennemis du royaume.",
+    "region": "Harad",
+    "lat": 247,
+    "lng": 4151,
+    "tolerance": 50
+  },
+  {
+    "id": "fornost",
+    "name": "Fornost",
+    "description": "Ancienne capitale du royaume d'Arthedain, tombée sous les coups du Roi-Sorcier d'Angmar.",
+    "region": "Eriador",
+    "lat": 5277,
+    "lng": 2558,
+    "tolerance": 45
+  },
+  {
+    "id": "annuminas",
+    "name": "Annúminas",
+    "description": "Première capitale du royaume d'Arnor, sur les rives du lac Nenuial.",
+    "region": "Eriador",
+    "lat": 5202,
+    "lng": 1992,
+    "tolerance": 40
+  },
+  {
+    "id": "monts-de-fer",
+    "name": "Les Monts de Fer",
+    "description": "Chaîne de montagnes à l'est de Rhovanion, refuge des Nains après la perte d'Erebor.",
+    "region": "Rhovanion",
+    "lat": 5600,
+    "lng": 6238,
+    "tolerance": 400,
+    "polygon": [
+      [
+        5850,
+        5560
+      ],
+      [
+        5930,
+        5800
+      ],
+      [
+        5920,
+        6300
+      ],
+      [
+        5800,
+        6680
+      ],
+      [
+        5620,
+        6820
+      ],
+      [
+        5380,
+        6730
+      ],
+      [
+        5250,
+        6370
+      ],
+      [
+        5330,
+        5820
+      ],
+      [
+        5530,
+        5530
+      ]
+    ]
+  },
+  {
+    "id": "cair-andros",
+    "name": "Cair Andros",
+    "description": "Île fortifiée du Gondor sur l'Anduin, protégeant les approches nord de Minas Tirith.",
+    "region": "Gondor",
+    "lat": 2442,
+    "lng": 5146,
+    "tolerance": 42
+  },
+  {
+    "id": "henneth-annun",
+    "name": "Henneth Annûn",
+    "description": "Refuge caché des Rôdeurs de l'Ithilien, derrière une cascade, où Faramir accueillit Frodon.",
+    "region": "Gondor",
+    "lat": 2405,
+    "lng": 5265,
+    "tolerance": 22
+  },
+  {
+    "id": "morannon",
+    "name": "La Porte Noire",
+    "description": "Le Morannon, entrée principale du Mordor, porte massive gardée par les armées de Sauron.",
+    "region": "Mordor",
+    "lat": 2831,
+    "lng": 5372,
+    "tolerance": 45
+  },
+  {
+    "id": "forlond",
+    "name": "Forlond",
+    "description": "Port elfique au nord du golfe de Lune, dans le Lindon septentrional.",
+    "region": "Lindon",
+    "lat": 4941,
+    "lng": 604,
+    "tolerance": 32
+  },
+  {
+    "id": "harlond",
+    "name": "Harlond",
+    "description": "Port elfique au sud du golfe de Lune, dans le Lindon méridional.",
+    "region": "Lindon",
+    "lat": 4605,
+    "lng": 910,
+    "tolerance": 32
+  },
+  {
+    "id": "collines-des-tours",
+    "name": "Collines des Tours",
+    "description": "Collines à l'ouest de la Comté abritant les tours elfiques et un palantír.",
+    "region": "Lindon",
+    "lat": 4764,
+    "lng": 1462,
+    "tolerance": 90
+  },
+  {
+    "id": "grand-cave",
+    "name": "Grand'Cave",
+    "description": "Chef-lieu de la Comté et siège du Maire, au cœur des Collines Blanches.",
+    "region": "Comté",
+    "lat": 4835,
+    "lng": 1919,
+    "tolerance": 28
+  },
+  {
+    "id": "lezeau",
+    "name": "Lèzeau",
+    "description": "Village de la Comté voisin de Hobbiton, célèbre pour son auberge Le Dragon Vert.",
+    "region": "Comté",
+    "lat": 4931,
+    "lng": 2113,
+    "tolerance": 18
+  },
+  {
+    "id": "bourg-de-touque",
+    "name": "Bourg de Touque",
+    "description": "Bourg de la Comté, siège de la puissante famille Touque et du Thain.",
+    "region": "Comté",
+    "lat": 4756,
+    "lng": 2033,
+    "tolerance": 20
+  },
+  {
+    "id": "croisee-du-chemin",
+    "name": "Croisée du Chemin",
+    "description": "Carrefour de la Comté sur la route de l'est, entre Hobbiton et le Pays de Bouc.",
+    "region": "Comté",
+    "lat": 4852,
+    "lng": 2024,
+    "tolerance": 18
+  },
+  {
+    "id": "banque-de-touque",
+    "name": "Banque de Touque",
+    "description": "Hameau de la Comté au sud de Hobbiton, dans le Quartier Sud.",
+    "region": "Comté",
+    "lat": 4772,
+    "lng": 1990,
+    "tolerance": 18
+  },
+  {
+    "id": "grenouillere",
+    "name": "Grenouillère",
+    "description": "Village de la Comté sur la route de l'est, entre Lèzeau et le Pont de Brandevin.",
+    "region": "Comté",
+    "lat": 4946,
+    "lng": 2158,
+    "tolerance": 18
+  },
+  {
+    "id": "blancs-sillons",
+    "name": "Blancs-Sillons",
+    "description": "Village de la Comté sur la route de l'est, aux portes du Pays de Bouc.",
+    "region": "Comté",
+    "lat": 4952,
+    "lng": 2198,
+    "tolerance": 18
+  },
+  {
+    "id": "stock",
+    "name": "Stock",
+    "description": "Village du Pays de Bouc dans la Comté, à l'est du Brandevin.",
+    "region": "Comté",
+    "lat": 4854,
+    "lng": 2218,
+    "tolerance": 22
+  },
+  {
+    "id": "fond-de-saule",
+    "name": "Fond de Saule",
+    "description": "Hameau de la Comté dans le Quartier Est, sur les rives du Brandevin.",
+    "region": "Comté",
+    "lat": 4736,
+    "lng": 2180,
+    "tolerance": 20
+  },
+  {
+    "id": "creux-de-crique",
+    "name": "Creux-de-Crique",
+    "description": "Hameau reculé de la Comté, dans le Quartier Est au bord du Brandevin.",
+    "region": "Comté",
+    "lat": 4707,
+    "lng": 2343,
+    "tolerance": 18
+  },
+  {
+    "id": "jonchere",
+    "name": "Jonchère",
+    "description": "Hameau de la Comté au sud du Pays de Bouc, en bordure du Brandevin.",
+    "region": "Comté",
+    "lat": 4741,
+    "lng": 2325,
+    "tolerance": 18
+  },
+  {
+    "id": "sacqueville",
+    "name": "Sacqueville",
+    "description": "Village de la Comté au sud, foyer de la famille Sacquet de Besace.",
+    "region": "Comté",
+    "lat": 4500,
+    "lng": 2012,
+    "tolerance": 22
+  },
+  {
+    "id": "pont-de-brandevin",
+    "name": "Pont de Brandevin",
+    "description": "Pont sur le Brandevin reliant la Comté au Pays de Bouc, passage des Hobbits vers l'est.",
+    "region": "Comté",
+    "lat": 4928,
+    "lng": 2228,
+    "tolerance": 18
+  },
+  {
+    "id": "gue-de-sarn",
+    "name": "Gué de Sarn",
+    "description": "Passage sur le Baranduin au sud de la Comté, gardé secrètement par les Rôdeurs du Nord.",
+    "region": "Comté",
+    "lat": 4504,
+    "lng": 2337,
+    "tolerance": 20
+  },
+  {
+    "id": "hauts-des-galgals",
+    "name": "Hauts des Galgals",
+    "description": "Collines hantées à l'est de la Comté, anciens tertres funéraires où rôdent les Êtres des Galgals.",
+    "region": "Eriador",
+    "lat": 4646,
+    "lng": 2486,
+    "tolerance": 100,
+    "polygon": [
+      [
+        4790,
+        2395
+      ],
+      [
+        4810,
+        2550
+      ],
+      [
+        4720,
+        2700
+      ],
+      [
+        4580,
+        2730
+      ],
+      [
+        4560,
+        2590
+      ],
+      [
+        4560,
+        2400
+      ],
+      [
+        4660,
+        2365
+      ],
+      [
+        4730,
+        2380
+      ]
+    ]
+  },
+  {
+    "id": "dernier-pont",
+    "name": "Dernier Pont",
+    "description": "Pont sur la Mitheithel, dernier passage avant Fondcombe sur la Route de l'Est.",
+    "region": "Eriador",
+    "lat": 4994,
+    "lng": 3413,
+    "tolerance": 20
+  },
+  {
+    "id": "gue-de-bruinen",
+    "name": "Gué de Bruinen",
+    "description": "Passage sur la rivière Bruinen aux portes de Fondcombe, où les Nazgûl furent emportés par les flots.",
+    "region": "Eriador",
+    "lat": 4835,
+    "lng": 3727,
+    "tolerance": 20
+  },
+  {
+    "id": "carn-dum",
+    "name": "Carn Dûm",
+    "description": "Capitale du Roi-Sorcier d'Angmar, forteresse maléfique dans le nord des Monts Brumeux.",
+    "region": "Angmar",
+    "lat": 5952,
+    "lng": 3182,
+    "tolerance": 60
+  },
+  {
+    "id": "tharbad",
+    "name": "Tharbad",
+    "description": "Ancienne cité en ruines sur le Gwathló, autrefois carrefour important entre le nord et le sud.",
+    "region": "Eriador",
+    "lat": 4141,
+    "lng": 2904,
+    "tolerance": 42
+  },
+  {
+    "id": "ost-in-edhil",
+    "name": "Ost-in-Edhil",
+    "description": "Ancienne capitale des Elfes de l'Eregion, où Celebrimbor forgea les Anneaux de Pouvoir.",
+    "region": "Eregion",
+    "lat": 4080,
+    "lng": 3342,
+    "tolerance": 40
+  },
+  {
+    "id": "lond-daer",
+    "name": "Lond Daer",
+    "description": "Ancien grand port númenoréen sur la côte de l'Enedwaith, en ruines au Troisième Âge.",
+    "region": "Enedwaith",
+    "lat": 3563,
+    "lng": 2336,
+    "tolerance": 42
+  },
+  {
+    "id": "dol-amroth",
+    "name": "Dol Amroth",
+    "description": "Cité portuaire du prince Imrahil au bord de la baie de Belfalas, fief du Gondor.",
+    "region": "Gondor",
+    "lat": 1802,
+    "lng": 3783,
+    "tolerance": 42
+  },
+  {
+    "id": "calembel",
+    "name": "Calembel",
+    "description": "Ville du Gondor sur la rivière Ciril, traversée par l'Armée des Morts.",
+    "region": "Gondor",
+    "lat": 2211,
+    "lng": 4165,
+    "tolerance": 30
+  },
+  {
+    "id": "ethring",
+    "name": "Ethring",
+    "description": "Gué sur le Ringló en Gondor, étape sur la route menant à Pelargir.",
+    "region": "Gondor",
+    "lat": 2179,
+    "lng": 4289,
+    "tolerance": 20
+  },
+  {
+    "id": "erech",
+    "name": "Erech",
+    "description": "Colline du Gondor où se dresse la Pierre d'Isildur, lieu du serment des Morts de Dunharrow.",
+    "region": "Gondor",
+    "lat": 2478,
+    "lng": 3943,
+    "tolerance": 32
+  },
+  {
+    "id": "linhir",
+    "name": "Linhir",
+    "description": "Ville du Gondor au confluent du Gilrain et du Serni, disputée lors de la Guerre de l'Anneau.",
+    "region": "Gondor",
+    "lat": 1770,
+    "lng": 4453,
+    "tolerance": 30
+  },
+  {
+    "id": "edhellond",
+    "name": "Edhellond",
+    "description": "Ancien havre elfique près de Dol Amroth, d'où partirent les derniers Elfes vers l'Ouest.",
+    "region": "Gondor",
+    "lat": 1959,
+    "lng": 3920,
+    "tolerance": 30
+  },
+  {
+    "id": "emyn-arnen",
+    "name": "Emyn Arnen",
+    "description": "Collines de l'Ithilien, fief de la maison des Intendants et demeure de Faramir.",
+    "region": "Gondor",
+    "lat": 2102,
+    "lng": 5222,
+    "tolerance": 120
+  },
+  {
+    "id": "minas-brethil",
+    "name": "Minas Brethil",
+    "description": "Tour de garde du Gondor dans le Lebennin, sur la rive ouest de l'Anduin.",
+    "region": "Gondor",
+    "lat": 2009,
+    "lng": 4710,
+    "tolerance": 22
+  },
+  {
+    "id": "minas-arthor",
+    "name": "Minas Arthor",
+    "description": "Tour fortifiée du Gondor en Ithilien, gardant les approches orientales.",
+    "region": "Gondor",
+    "lat": 2055,
+    "lng": 5083,
+    "tolerance": 22
+  },
+  {
+    "id": "passage-du-poros",
+    "name": "Passage du Poros",
+    "description": "Gué stratégique sur la rivière Poros, frontière sud du Gondor avec le Harad.",
+    "region": "Gondor",
+    "lat": 1628,
+    "lng": 5259,
+    "tolerance": 25
+  },
+  {
+    "id": "endil",
+    "name": "Endil",
+    "description": "Petite cité côtière du Gondor près de Dol Amroth, sur les rives de la baie de Belfalas.",
+    "region": "Gondor",
+    "lat": 1613,
+    "lng": 3848,
+    "tolerance": 25
+  },
+  {
+    "id": "everhaven",
+    "name": "Everhaven",
+    "description": "Port du Gondor sur la côte ouest de l'Anfalas, tourné vers la Grande Mer.",
+    "region": "Gondor",
+    "lat": 1756,
+    "lng": 2833,
+    "tolerance": 30
+  },
+  {
+    "id": "methrast",
+    "name": "Methrast",
+    "description": "Cité portuaire du sud du Gondor, au bord de la baie de Belfalas.",
+    "region": "Gondor",
+    "lat": 1437,
+    "lng": 3998,
+    "tolerance": 30
+  },
+  {
+    "id": "sarlond",
+    "name": "Sarlond",
+    "description": "Port du Gondor au sud du Dor-en-Ernil, sur la côte de la baie de Belfalas.",
+    "region": "Gondor",
+    "lat": 1641,
+    "lng": 4165,
+    "tolerance": 30
+  },
+  {
+    "id": "gobel-tolfalas",
+    "name": "Gobel Tolfalas",
+    "description": "Forteresse sur l'île de Tolfalas à l'embouchure de l'Anduin, avant-poste du Gondor.",
+    "region": "Gondor",
+    "lat": 1379,
+    "lng": 4243,
+    "tolerance": 30
+  },
+  {
+    "id": "rondalph",
+    "name": "Rondalph",
+    "description": "Cité du Gondor dans l'Anfalas, sur la côte occidentale du royaume.",
+    "region": "Gondor",
+    "lat": 2027,
+    "lng": 3676,
+    "tolerance": 30
+  },
+  {
+    "id": "citadelle-dangbor",
+    "name": "Citadelle d'Angbor",
+    "description": "Forteresse d'Angbor le Téméraire dans le Lebennin, seigneur rallié à Aragorn.",
+    "region": "Gondor",
+    "lat": 2087,
+    "lng": 4521,
+    "tolerance": 30
+  },
+  {
+    "id": "aldburg",
+    "name": "Aldburg",
+    "description": "Ancienne capitale du Rohan fondée par Eorl le Jeune dans le Folde Est.",
+    "region": "Rohan",
+    "lat": 2555,
+    "lng": 4243,
+    "tolerance": 35
+  },
+  {
+    "id": "dunharrow",
+    "name": "Dunharrow",
+    "description": "Refuge fortifié du Rohan dans les Montagnes Blanches, lieu de rassemblement des Rohirrim.",
+    "region": "Rohan",
+    "lat": 2599,
+    "lng": 3940,
+    "tolerance": 52
+  },
+  {
+    "id": "argonath",
+    "name": "Argonath",
+    "description": "Les Piliers des Rois, statues géantes d'Isildur et Anárion gardant l'entrée de l'Anduin.",
+    "region": "Gondor",
+    "lat": 2949,
+    "lng": 4721,
+    "tolerance": 20
+  },
+  {
+    "id": "amon-hen",
+    "name": "Amon Hen",
+    "description": "La Colline de la Vue, siège antique de surveillance où la Communauté de l'Anneau se brisa.",
+    "region": "Gondor",
+    "lat": 2784,
+    "lng": 4734,
+    "tolerance": 32
+  },
+  {
+    "id": "chutes-de-rauros",
+    "name": "Chutes de Rauros",
+    "description": "Imposantes cascades de l'Anduin en aval de l'Amon Hen, où Boromir reçut ses funérailles.",
+    "region": "Gondor",
+    "lat": 2851,
+    "lng": 4792,
+    "tolerance": 32
+  },
+  {
+    "id": "champ-du-celebrant",
+    "name": "Champ du Celebrant",
+    "description": "Plaine entre la Lothlórien et l'Anduin, site de la victoire d'Eorl qui fonda le Rohan.",
+    "region": "Rhovanion",
+    "lat": 3623,
+    "lng": 4515,
+    "tolerance": 150,
+    "polygon": [
+      [
+        3910,
+        4180
+      ],
+      [
+        3970,
+        4450
+      ],
+      [
+        3880,
+        4680
+      ],
+      [
+        3720,
+        4740
+      ],
+      [
+        3600,
+        4660
+      ],
+      [
+        3510,
+        4420
+      ],
+      [
+        3580,
+        4190
+      ],
+      [
+        3750,
+        4100
+      ]
+    ]
+  },
+  {
+    "id": "isenmouthe",
+    "name": "Isenmouthe",
+    "description": "Le Carach Angren, passage fortifié entre Udûn et le plateau de Gorgoroth en Mordor.",
+    "region": "Mordor",
+    "lat": 2628,
+    "lng": 5551,
+    "tolerance": 35
+  },
+  {
+    "id": "marais-des-morts",
+    "name": "Marais des Morts",
+    "description": "Marécages hantés au nord-ouest du Mordor, traversés par Frodon, Sam et Gollum.",
+    "region": "Mordor",
+    "lat": 2880,
+    "lng": 5110,
+    "tolerance": 500,
+    "polygon": [
+      [
+        2920,
+        4860
+      ],
+      [
+        2900,
+        5110
+      ],
+      [
+        2860,
+        5440
+      ],
+      [
+        2720,
+        5430
+      ],
+      [
+        2700,
+        5200
+      ],
+      [
+        2710,
+        4940
+      ],
+      [
+        2760,
+        4780
+      ]
+    ]
+  },
+  {
+    "id": "caras-galadhon",
+    "name": "Caras Galadhon",
+    "description": "Cité des arbres au cœur de la Lothlórien, demeure de Galadriel et Celeborn parmi les mallorn.",
+    "region": "Rhovanion",
+    "lat": 3989,
+    "lng": 4230,
+    "tolerance": 55
+  },
+  {
+    "id": "haute-passe",
+    "name": "Haute Passe",
+    "description": "Col des Monts Brumeux emprunté par Thorin et sa compagnie, repaire des Gobelins.",
+    "region": "Monts Brumeux",
+    "lat": 4961,
+    "lng": 4097,
+    "tolerance": 55
+  },
+  {
+    "id": "mont-gundabad",
+    "name": "Mont Gundabad",
+    "description": "Montagne sacrée des Nains à la jonction des Monts Brumeux, occupée par les Orques.",
+    "region": "Monts Brumeux",
+    "lat": 5827,
+    "lng": 3958,
+    "tolerance": 65
+  },
+  {
+    "id": "mont-gram",
+    "name": "Mont Gram",
+    "description": "Montagne des Monts Brumeux, repaire d'Orques qui attaquèrent la Comté.",
+    "region": "Monts Brumeux",
+    "lat": 5662,
+    "lng": 3496,
+    "tolerance": 65
+  },
+  {
+    "id": "vieux-gue",
+    "name": "Vieux Gué",
+    "description": "Passage sur l'Anduin au nord de la Forêt Noire, emprunté par les voyageurs et marchands.",
+    "region": "Rhovanion",
+    "lat": 5004,
+    "lng": 4381,
+    "tolerance": 22
+  },
+  {
+    "id": "champs-diris",
+    "name": "Champs d'Iris",
+    "description": "Marécages sur l'Anduin où Isildur périt et l'Anneau Unique fut perdu pendant deux millénaires.",
+    "region": "Rhovanion",
+    "lat": 4544,
+    "lng": 4436,
+    "tolerance": 400,
+    "polygon": [
+      [
+        4820,
+        4170
+      ],
+      [
+        4920,
+        4380
+      ],
+      [
+        4830,
+        4680
+      ],
+      [
+        4640,
+        4820
+      ],
+      [
+        4330,
+        4740
+      ],
+      [
+        4200,
+        4510
+      ],
+      [
+        4290,
+        4190
+      ],
+      [
+        4490,
+        4090
+      ],
+      [
+        4710,
+        4130
+      ]
+    ]
+  },
+  {
+    "id": "palais-de-thranduil",
+    "name": "Palais de Thranduil",
+    "description": "Cavernes du Roi des Elfes Sylvains dans le nord de la Forêt Noire, où Bilbon libéra les Nains.",
+    "region": "Rhovanion",
+    "lat": 5395,
+    "lng": 5137,
+    "tolerance": 52
+  },
+  {
+    "id": "framsburg",
+    "name": "Framsburg",
+    "description": "Ancienne cité des Éothéod dans les vallées du nord, berceau des ancêtres des Rohirrim.",
+    "region": "Rhovanion",
+    "lat": 5577,
+    "lng": 4263,
+    "tolerance": 35
+  },
+  {
+    "id": "aire-des-aigles",
+    "name": "Aire des Aigles",
+    "description": "Nid des Grands Aigles dans les Monts Brumeux, refuge de Gandalf et des Nains.",
+    "region": "Monts Brumeux",
+    "lat": 5246,
+    "lng": 4243,
+    "tolerance": 55
+  },
+  {
+    "id": "derwath",
+    "name": "Derwath",
+    "description": "Cité du Dunland, au pied occidental des Montagnes Blanches.",
+    "region": "Dunland",
+    "lat": 2816,
+    "lng": 3381,
+    "tolerance": 30
+  },
+  {
+    "id": "gineard",
+    "name": "Gineard",
+    "description": "Cité du Dunland, peuplée par les Dunlendings hostiles au Rohan.",
+    "region": "Dunland",
+    "lat": 2998,
+    "lng": 3317,
+    "tolerance": 30
+  },
+  {
+    "id": "onodrith",
+    "name": "Onodrith",
+    "description": "Cité sur les marches nord du Rohan, aux abords de la Trouée de Rohan.",
+    "region": "Rohan",
+    "lat": 3023,
+    "lng": 4226,
+    "tolerance": 30
+  },
+  {
+    "id": "fennas-drunin",
+    "name": "Fennas Drûnîn",
+    "description": "Ancienne cité fortifiée de l'Eregion, aux portes des Monts Brumeux.",
+    "region": "Eregion",
+    "lat": 4510,
+    "lng": 3381,
+    "tolerance": 42
+  },
+  {
+    "id": "himling",
+    "name": "Himling",
+    "description": "Île au large des côtes nord-ouest, vestige émergé de l'ancien Beleriand englouti.",
+    "region": "Lindon",
+    "lat": 5844,
+    "lng": 353,
+    "tolerance": 60
+  },
+  {
+    "id": "ilanin",
+    "name": "Ilanin",
+    "description": "Cité des Hommes de l'Est en Rhovanion, aux confins orientaux de la Terre du Milieu.",
+    "region": "Rhûn",
+    "lat": 4429,
+    "lng": 6356,
+    "tolerance": 28
+  },
+  {
+    "id": "szrel-kain",
+    "name": "Szrel-Kain",
+    "description": "Cité lointaine des Orientaux dans les terres de Rhûn, au-delà de la Mer intérieure.",
+    "region": "Rhûn",
+    "lat": 4347,
+    "lng": 6886,
+    "tolerance": 28
+  },
+  {
+    "id": "mistrand",
+    "name": "Mistrand",
+    "description": "Cité des Orientaux sur les rives de la Mer de Rhûn, peuplée par les Easterlings.",
+    "region": "Rhûn",
+    "lat": 3579,
+    "lng": 7368,
+    "tolerance": 28
+  },
+  {
+    "id": "ramlond",
+    "name": "Ramlond",
+    "description": "Port du Harad méridional sur les côtes sud de la Terre du Milieu.",
+    "region": "Harad",
+    "lat": 666,
+    "lng": 4492,
+    "tolerance": 28
+  },
+  {
+    "id": "gobel-ancalimon",
+    "name": "Gobel Ancalimon",
+    "description": "Cité du Harad proche, au sud du Harondor, peuplée par les Haradrim.",
+    "region": "Harad",
+    "lat": 678,
+    "lng": 4928,
+    "tolerance": 28
+  },
+  {
+    "id": "amrun",
+    "name": "Amrûn",
+    "description": "Cité du Harad oriental, aux confins des terres arides du sud-est.",
+    "region": "Harad",
+    "lat": 724,
+    "lng": 5584,
+    "tolerance": 28
+  },
+  {
+    "id": "emyn-uial",
+    "name": "Collines du Crépuscule",
+    "description": "Collines au nord de la Comté surplombant le lac Nenuial, vestiges de l'ancien Arnor.",
+    "region": "Eriador",
+    "lat": 5683,
+    "lng": 2018,
+    "tolerance": 180,
+    "polygon": [
+      [
+        5870,
+        1740
+      ],
+      [
+        5920,
+        1990
+      ],
+      [
+        5920,
+        2250
+      ],
+      [
+        5770,
+        2420
+      ],
+      [
+        5560,
+        2370
+      ],
+      [
+        5490,
+        2120
+      ],
+      [
+        5530,
+        1860
+      ],
+      [
+        5690,
+        1710
+      ]
+    ]
+  },
+  {
+    "id": "emyn-muil",
+    "name": "Emyn Muil",
+    "description": "Labyrinthe de collines rocheuses à l'est de l'Anduin, traversé par Frodon et Sam.",
+    "region": "Rhovanion",
+    "lat": 3020,
+    "lng": 5005,
+    "tolerance": 200,
+    "polygon": [
+      [
+        3200,
+        4640
+      ],
+      [
+        3260,
+        4920
+      ],
+      [
+        3180,
+        4960
+      ],
+      [
+        3010,
+        5010
+      ],
+      [
+        2800,
+        4980
+      ],
+      [
+        2700,
+        4950
+      ],
+      [
+        2710,
+        4950
+      ],
+      [
+        2780,
+        4700
+      ],
+      [
+        2840,
+        4700
+      ],
+      [
+        2990,
+        4610
+      ],
+      [
+        3150,
+        4610
+      ]
+    ]
+  },
+  {
+    "id": "pinnath-gelin",
+    "name": "Pinnath Gelin",
+    "description": "Les Collines Vertes dans l'ouest du Gondor, fief loyal envoyant des renforts à Minas Tirith.",
+    "region": "Gondor",
+    "lat": 2162,
+    "lng": 3233,
+    "tolerance": 200,
+    "polygon": [
+      [
+        2420,
+        2980
+      ],
+      [
+        2430,
+        3380
+      ],
+      [
+        2230,
+        3700
+      ],
+      [
+        2020,
+        3730
+      ],
+      [
+        1910,
+        3430
+      ],
+      [
+        1900,
+        3100
+      ],
+      [
+        2050,
+        2880
+      ],
+      [
+        2310,
+        2880
+      ]
+    ]
+  },
+  {
+    "id": "ered-lithui",
+    "name": "Monts de Cendre",
+    "description": "Chaîne nord du Mordor, formant la frontière entre le plateau de Gorgoroth et le Rhovanion.",
+    "region": "Mordor",
+    "lat": 2833,
+    "lng": 6343,
+    "tolerance": 400,
+    "polygon": [
+      [
+        3100,
+        5480
+      ],
+      [
+        3060,
+        5980
+      ],
+      [
+        3000,
+        6480
+      ],
+      [
+        2940,
+        6900
+      ],
+      [
+        2850,
+        7200
+      ],
+      [
+        2730,
+        7200
+      ],
+      [
+        2670,
+        6900
+      ],
+      [
+        2680,
+        6480
+      ],
+      [
+        2750,
+        5980
+      ],
+      [
+        2870,
+        5480
+      ],
+      [
+        3000,
+        5350
+      ]
+    ]
+  },
+  {
+    "id": "ered-nimrais",
+    "name": "Montagnes Blanches",
+    "description": "Grande chaîne de montagnes séparant le Rohan du Gondor, abritant le Chemin des Morts.",
+    "region": "Rohan",
+    "lat": 2723,
+    "lng": 3154,
+    "tolerance": 400,
+    "polygon": [
+      [
+        2750,
+        2850
+      ],
+      [
+        2720,
+        3350
+      ],
+      [
+        2660,
+        3900
+      ],
+      [
+        2530,
+        4300
+      ],
+      [
+        2500,
+        4700
+      ],
+      [
+        2400,
+        5050
+      ],
+      [
+        2240,
+        5100
+      ],
+      [
+        2160,
+        4960
+      ],
+      [
+        2260,
+        4000
+      ],
+      [
+        2310,
+        3450
+      ],
+      [
+        2460,
+        2880
+      ],
+      [
+        2680,
+        2760
+      ]
+    ]
+  },
+  {
+    "id": "ephel-duath",
+    "name": "Ephel Dúath",
+    "description": "Les Montagnes de l'Ombre, chaîne ouest du Mordor séparant le pays noir de l'Ithilien.",
+    "region": "Mordor",
+    "lat": 1744,
+    "lng": 5483,
+    "tolerance": 400,
+    "polygon": [
+      [
+        3010,
+        5260
+      ],
+      [
+        2930,
+        5410
+      ],
+      [
+        2730,
+        5610
+      ],
+      [
+        2500,
+        5610
+      ],
+      [
+        2200,
+        5590
+      ],
+      [
+        1800,
+        5590
+      ],
+      [
+        1500,
+        5400
+      ],
+      [
+        1420,
+        5260
+      ],
+      [
+        1590,
+        5260
+      ],
+      [
+        1990,
+        5260
+      ],
+      [
+        2400,
+        5260
+      ],
+      [
+        2740,
+        5260
+      ]
+    ]
+  },
+  {
+    "id": "ered-luin",
+    "name": "Montagnes Bleues",
+    "description": "Chaîne de montagnes à l'extrême ouest, frontière entre le Lindon et l'Eriador.",
+    "region": "Lindon",
+    "lat": 5913,
+    "lng": 1175,
+    "tolerance": 500,
+    "polygon": [
+      [
+        6200,
+        700
+      ],
+      [
+        6050,
+        1000
+      ],
+      [
+        5950,
+        1250
+      ],
+      [
+        5750,
+        1300
+      ],
+      [
+        5500,
+        1200
+      ],
+      [
+        5250,
+        1100
+      ],
+      [
+        5050,
+        1020
+      ],
+      [
+        4940,
+        900
+      ],
+      [
+        4940,
+        760
+      ],
+      [
+        5150,
+        720
+      ],
+      [
+        5450,
+        710
+      ],
+      [
+        5750,
+        700
+      ],
+      [
+        6100,
+        700
+      ]
+    ]
+  },
+  {
+    "id": "ered-mithrim",
+    "name": "Montagnes Grises",
+    "description": "Chaîne au nord de Rhovanion, ancien domaine des Dragons et repaire de Scatha.",
+    "region": "Rhovanion",
+    "lat": 5936,
+    "lng": 4412,
+    "tolerance": 350,
+    "polygon": [
+      [
+        6200,
+        3700
+      ],
+      [
+        6200,
+        4500
+      ],
+      [
+        6100,
+        5200
+      ],
+      [
+        5900,
+        5700
+      ],
+      [
+        5700,
+        5700
+      ],
+      [
+        5700,
+        5100
+      ],
+      [
+        5800,
+        4500
+      ],
+      [
+        5900,
+        3900
+      ],
+      [
+        6050,
+        3700
+      ]
+    ]
+  },
+  {
+    "id": "trollshaws",
+    "name": "Trollshaws",
+    "description": "Forêt au sud-est de Fondcombe, repaire de trolls où Bilbon trouva l'épée Dard.",
+    "region": "Eriador",
+    "lat": 4933,
+    "lng": 3641,
+    "tolerance": 200,
+    "polygon": [
+      [
+        5022,
+        3530
+      ],
+      [
+        4995,
+        3700
+      ],
+      [
+        4955,
+        3768
+      ],
+      [
+        4910,
+        3740
+      ],
+      [
+        4912,
+        3600
+      ],
+      [
+        4930,
+        3520
+      ],
+      [
+        4970,
+        3518
+      ]
+    ]
+  },
+  {
+    "id": "vieille-foret",
+    "name": "Vieille Forêt",
+    "description": "Forêt ancienne et mystérieuse à l'est de la Comté, domaine de Tom Bombadil et du Vieil Homme-Saule.",
+    "region": "Eriador",
+    "lat": 4799,
+    "lng": 2359,
+    "tolerance": 150,
+    "polygon": [
+      [
+        4853,
+        2140
+      ],
+      [
+        4840,
+        2310
+      ],
+      [
+        4790,
+        2429
+      ],
+      [
+        4720,
+        2420
+      ],
+      [
+        4711,
+        2270
+      ],
+      [
+        4730,
+        2140
+      ],
+      [
+        4800,
+        2095
+      ]
+    ]
+  },
+  {
+    "id": "bindbole",
+    "name": "Bois de Bindbole",
+    "description": "Petite forêt au nord d'Hobbiton dans la Comté, un des rares boisements du pays.",
+    "region": "Comté",
+    "lat": 4998,
+    "lng": 2047,
+    "tolerance": 80,
+    "polygon": [
+      [
+        5025,
+        2015
+      ],
+      [
+        5018,
+        2070
+      ],
+      [
+        4978,
+        2075
+      ],
+      [
+        4967,
+        2042
+      ],
+      [
+        4972,
+        2012
+      ],
+      [
+        5006,
+        2010
+      ]
+    ]
+  },
+  {
+    "id": "bout-des-bois",
+    "name": "Bout-des-Bois",
+    "description": "Bois à l'est de la Comté où Frodon rencontra Gildor et les Elfes partant vers l'Ouest.",
+    "region": "Comté",
+    "lat": 4786,
+    "lng": 2174,
+    "tolerance": 55
+  },
+  {
+    "id": "foret-de-chet",
+    "name": "Forêt de Chet",
+    "description": "Forêt au nord de Bree, traversée par les Hobbits et Grands-Pas en fuyant les Nazgûl.",
+    "region": "Eriador",
+    "lat": 4909,
+    "lng": 2615,
+    "tolerance": 85,
+    "polygon": [
+      [
+        4957,
+        2580
+      ],
+      [
+        4935,
+        2661
+      ],
+      [
+        4880,
+        2655
+      ],
+      [
+        4872,
+        2590
+      ],
+      [
+        4900,
+        2572
+      ],
+      [
+        4940,
+        2576
+      ]
+    ]
+  },
+  {
+    "id": "bois-de-firien",
+    "name": "Bois de Firien",
+    "description": "Forêt sacrée sur les Montagnes Blanches, à la frontière entre le Rohan et le Gondor.",
+    "region": "Gondor",
+    "lat": 2468,
+    "lng": 4586,
+    "tolerance": 80
+  },
+  {
+    "id": "foret-de-druadan",
+    "name": "Forêt de Drúadan",
+    "description": "Forêt du Gondor peuplée par les Drúedain de Ghân-buri-Ghân, qui guida les Rohirrim.",
+    "region": "Gondor",
+    "lat": 2332,
+    "lng": 4958,
+    "tolerance": 75
+  },
+  {
+    "id": "eryn-vorn",
+    "name": "Eryn Vorn",
+    "description": "Forêt sauvage sur la côte de l'Enedwaith, vestige des grandes forêts du Second Âge.",
+    "region": "Enedwaith",
+    "lat": 3686,
+    "lng": 1660,
+    "tolerance": 180,
+    "polygon": [
+      [
+        3806,
+        1600
+      ],
+      [
+        3775,
+        1710
+      ],
+      [
+        3705,
+        1735
+      ],
+      [
+        3600,
+        1720
+      ],
+      [
+        3510,
+        1660
+      ],
+      [
+        3491,
+        1595
+      ],
+      [
+        3575,
+        1586
+      ],
+      [
+        3730,
+        1590
+      ]
+    ]
+  },
+  {
+    "id": "overhill",
+    "name": "Overhill",
+    "description": "Hameau de la Comté juste au nord d'Hobbiton, au-delà de la Colline.",
+    "region": "Comté",
+    "lat": 5027,
+    "lng": 2009,
+    "tolerance": 18
+  },
+  {
+    "id": "andrast",
+    "name": "Andrast",
+    "description": "Cap rocheux à l'extrême ouest du Gondor, péninsule sauvage et inhabitée.",
+    "region": "Gondor",
+    "lat": 1670,
+    "lng": 2002,
+    "tolerance": 130,
+    "polygon": [
+      [
+        2010,
+        1890
+      ],
+      [
+        1920,
+        2090
+      ],
+      [
+        1770,
+        2310
+      ],
+      [
+        1570,
+        2230
+      ],
+      [
+        1410,
+        2020
+      ],
+      [
+        1490,
+        1750
+      ],
+      [
+        1690,
+        1640
+      ],
+      [
+        1900,
+        1740
+      ]
+    ]
+  },
+  {
+    "id": "tolfalas",
+    "name": "Tolfalas",
+    "description": "Grande île au large du Gondor, à l'embouchure de l'Anduin dans la Baie de Belfalas.",
+    "region": "Gondor",
+    "lat": 1282,
+    "lng": 4166,
+    "tolerance": 180,
+    "polygon": [
+      [
+        1530,
+        3880
+      ],
+      [
+        1540,
+        4200
+      ],
+      [
+        1440,
+        4530
+      ],
+      [
+        1220,
+        4570
+      ],
+      [
+        1060,
+        4330
+      ],
+      [
+        1050,
+        3960
+      ],
+      [
+        1200,
+        3750
+      ],
+      [
+        1410,
+        3750
+      ]
+    ]
+  },
+  {
+    "id": "trouee-du-rohan",
+    "name": "Trouée du Rohan",
+    "description": "Passage stratégique entre les Monts Brumeux et les Montagnes Blanches, gardé par Isengard.",
+    "region": "Rohan",
+    "lat": 3112,
+    "lng": 3865,
+    "tolerance": 150
+  },
+  {
+    "id": "langle",
+    "name": "L'Angle",
+    "description": "Région entre le Bruinen et la Mitheithel, ancienne terre des Dúnedain du Nord.",
+    "region": "Eriador",
+    "lat": 4589,
+    "lng": 3434,
+    "tolerance": 200,
+    "polygon": [
+      [
+        4930,
+        3150
+      ],
+      [
+        4930,
+        3620
+      ],
+      [
+        4700,
+        3720
+      ],
+      [
+        4450,
+        3680
+      ],
+      [
+        4230,
+        3500
+      ],
+      [
+        4220,
+        3160
+      ],
+      [
+        4490,
+        3050
+      ],
+      [
+        4730,
+        3090
+      ]
+    ]
+  },
+  {
+    "id": "landes-detten",
+    "name": "Landes d'Etten",
+    "description": "Landes désolées au nord de Fondcombe, infestées de Trolls et de créatures malfaisantes.",
+    "region": "Eriador",
+    "lat": 5481,
+    "lng": 3552,
+    "tolerance": 200,
+    "polygon": [
+      [
+        5800,
+        3580
+      ],
+      [
+        5800,
+        3850
+      ],
+      [
+        5750,
+        4050
+      ],
+      [
+        5650,
+        4120
+      ],
+      [
+        5360,
+        4020
+      ],
+      [
+        5170,
+        3730
+      ],
+      [
+        5220,
+        3520
+      ],
+      [
+        5450,
+        3520
+      ],
+      [
+        5700,
+        3560
+      ]
+    ]
+  },
+  {
+    "id": "coldfells",
+    "name": "Coldfells",
+    "description": "Collines froides au nord-est de Fondcombe, terres sauvages et désolées.",
+    "region": "Eriador",
+    "lat": 5326,
+    "lng": 3892,
+    "tolerance": 200,
+    "polygon": [
+      [
+        5570,
+        3690
+      ],
+      [
+        5620,
+        3990
+      ],
+      [
+        5520,
+        4310
+      ],
+      [
+        5270,
+        4420
+      ],
+      [
+        5100,
+        4180
+      ],
+      [
+        5090,
+        3820
+      ],
+      [
+        5240,
+        3590
+      ],
+      [
+        5450,
+        3570
+      ]
+    ]
+  },
+  {
+    "id": "nan-curunir",
+    "name": "Nan Curunír",
+    "description": "La vallée de Saroumane, au pied de la tour d'Orthanc et de la forteresse d'Isengard.",
+    "region": "Rohan",
+    "lat": 3114,
+    "lng": 3595,
+    "tolerance": 100,
+    "polygon": [
+      [
+        3360,
+        3360
+      ],
+      [
+        3350,
+        3700
+      ],
+      [
+        3200,
+        3850
+      ],
+      [
+        2980,
+        3820
+      ],
+      [
+        2960,
+        3650
+      ],
+      [
+        3010,
+        3420
+      ],
+      [
+        3160,
+        3320
+      ],
+      [
+        3310,
+        3320
+      ]
+    ]
+  },
+  {
+    "id": "marais-des-moustiques",
+    "name": "Marais des Moustiques",
+    "description": "Marécages infestés entre Bree et le Mont Venteux, traversés par les Hobbits.",
+    "region": "Eriador",
+    "lat": 4941,
+    "lng": 2802,
+    "tolerance": 80,
+    "polygon": [
+      [
+        5010,
+        2650
+      ],
+      [
+        5020,
+        2840
+      ],
+      [
+        4950,
+        2910
+      ],
+      [
+        4840,
+        2870
+      ],
+      [
+        4760,
+        2780
+      ],
+      [
+        4780,
+        2650
+      ],
+      [
+        4890,
+        2630
+      ],
+      [
+        4980,
+        2640
+      ]
+    ]
+  },
+  {
+    "id": "nin-in-eilph",
+    "name": "Nîn-in-Eilph",
+    "description": "Marais des Cygnes dans l'Eregion, région marécageuse entre la Moria et Tharbad.",
+    "region": "Eregion",
+    "lat": 4165,
+    "lng": 3060,
+    "tolerance": 130,
+    "polygon": [
+      [
+        4340,
+        2960
+      ],
+      [
+        4340,
+        3210
+      ],
+      [
+        4180,
+        3330
+      ],
+      [
+        3960,
+        3280
+      ],
+      [
+        3880,
+        3020
+      ],
+      [
+        3960,
+        2950
+      ],
+      [
+        4155,
+        2960
+      ]
+    ]
+  },
+  {
+    "id": "nindalf",
+    "name": "Nindalf",
+    "description": "Les Marais des Cygnes au pied des Emyn Muil, zone marécageuse sur l'Anduin.",
+    "region": "Rhovanion",
+    "lat": 2671,
+    "lng": 4984,
+    "tolerance": 130,
+    "polygon": [
+      [
+        2720,
+        4730
+      ],
+      [
+        2740,
+        5010
+      ],
+      [
+        2660,
+        5170
+      ],
+      [
+        2510,
+        5100
+      ],
+      [
+        2450,
+        4900
+      ],
+      [
+        2480,
+        4730
+      ],
+      [
+        2640,
+        4670
+      ]
+    ]
+  },
+  {
+    "id": "hauts-de-lundeep-nord",
+    "name": "Hauts de l'Undeep Nord",
+    "description": "Passage à gué sur le cours supérieur de l'Anduin, au nord des Champs aux Iris.",
+    "region": "Rhovanion",
+    "lat": 3540,
+    "lng": 4616,
+    "tolerance": 28
+  },
+  {
+    "id": "hauts-de-lundeep-sud",
+    "name": "Hauts de l'Undeep Sud",
+    "description": "Passage à gué sur l'Anduin, au sud des Champs aux Iris, route entre Rohan et Rhovanion.",
+    "region": "Rhovanion",
+    "lat": 3366,
+    "lng": 4719,
+    "tolerance": 28
+  },
+  {
+    "id": "hauts-lointains",
+    "name": "Hauts Lointains",
+    "description": "Collines à l'extrême ouest de la Comté, frontière du pays hobbit.",
+    "region": "Comté",
+    "lat": 4909,
+    "lng": 1678,
+    "tolerance": 100
+  },
+  {
+    "id": "hauts-blancs",
+    "name": "Hauts Blancs",
+    "description": "Collines de l'ouest de la Comté, lieu de la capitale Grand'Cave.",
+    "region": "Comté",
+    "lat": 4678,
+    "lng": 1838,
+    "tolerance": 100
+  },
+  {
+    "id": "hauts-du-sud",
+    "name": "Hauts du Sud",
+    "description": "Collines au sud de Bree, région désolée et sauvage de l'Eriador.",
+    "region": "Eriador",
+    "lat": 4621,
+    "lng": 2788,
+    "tolerance": 100
+  },
+  {
+    "id": "cite-des-corsaires",
+    "name": "Cité des Corsaires",
+    "description": "Grande cité portuaire des Corsaires, au sud d'Umbar, base de leurs flottes de guerre.",
+    "region": "Harad",
+    "lat": 331,
+    "lng": 4262,
+    "tolerance": 45
+  },
+  {
+    "id": "vieille-route-de-la-foret",
+    "name": "Vieille Route de la Forêt",
+    "description": "Ancienne route traversant la Forêt Noire d'ouest en est, abandonnée à cause de Dol Guldur.",
+    "region": "Rhovanion",
+    "lat": 5037,
+    "lng": 4564,
+    "tolerance": 500,
+    "polygon": [
+      [
+        5120,
+        4410
+      ],
+      [
+        5100,
+        4700
+      ],
+      [
+        5080,
+        5000
+      ],
+      [
+        5060,
+        5280
+      ],
+      [
+        4960,
+        5280
+      ],
+      [
+        4950,
+        5000
+      ],
+      [
+        4950,
+        4700
+      ],
+      [
+        4950,
+        4410
+      ]
+    ]
+  }
+]

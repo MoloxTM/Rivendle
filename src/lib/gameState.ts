@@ -89,3 +89,45 @@ export function loadSimpleGameState(mode: string): SavedSimpleGameState | null {
     return null;
   }
 }
+
+// Map mode state
+interface SavedMapGameState {
+  date: string;
+  guesses: { lat: number; lng: number; distance: number }[];
+  won: boolean;
+  locationName: string;
+  correctLat: number;
+  correctLng: number;
+}
+
+export function saveMapGameState(
+  guesses: { lat: number; lng: number; distance: number }[],
+  won: boolean,
+  locationName: string,
+  correctLat: number,
+  correctLng: number
+): void {
+  if (typeof window === "undefined") return;
+  const state: SavedMapGameState = {
+    date: getTodayStr(),
+    guesses,
+    won,
+    locationName,
+    correctLat,
+    correctLng,
+  };
+  localStorage.setItem(getKey("map"), JSON.stringify(state));
+}
+
+export function loadMapGameState(): SavedMapGameState | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = localStorage.getItem(getKey("map"));
+    if (!raw) return null;
+    const state = JSON.parse(raw) as SavedMapGameState;
+    if (state.date !== getTodayStr()) return null;
+    return state;
+  } catch {
+    return null;
+  }
+}
